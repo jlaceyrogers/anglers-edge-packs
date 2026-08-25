@@ -21,7 +21,7 @@
    "version": 2,
    "size_bytes": 5156478,
    "sha256": "e90ea0897ae2aed8e22c203fc100e75a9b89e4300379f91850c0b35940ebb966",
-   "url": "packs/abram.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/abram.zip",
    "min_app_build": 11
   },
   {
@@ -46,7 +46,7 @@
    "version": 1,
    "size_bytes": 7049516,
    "sha256": "f3295539e76b44256edde428e506e25db6e260f22b07c5d3c8d15118a74d1882",
-   "url": "packs/balsam.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/balsam.zip",
    "min_app_build": 11
   },
   {
@@ -70,7 +70,7 @@
    "version": 1,
    "size_bytes": 6808023,
    "sha256": "bf3b839ff35589746faae907b1b473aa922cab5f7e3e69a2f8e72464c82d45d1",
-   "url": "packs/blacksturgeon.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/blacksturgeon.zip",
    "min_app_build": 11
   },
   {
@@ -94,7 +94,7 @@
    "version": 1,
    "size_bytes": 3095228,
    "sha256": "375bed3610d3286267dd6a0d226195ec15ef69a73950412d8e8081189796f853",
-   "url": "packs/chemong.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/chemong.zip",
    "min_app_build": 11
   },
   {
@@ -118,7 +118,7 @@
    "version": 1,
    "size_bytes": 2155460,
    "sha256": "d175eea74143f6da9baa86829bf8232c24e056f53df1293cc3a7b08cb9e8a090",
-   "url": "packs/drag.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/drag.zip",
    "min_app_build": 11
   },
   {
@@ -142,7 +142,7 @@
    "version": 1,
    "size_bytes": 16121340,
    "sha256": "940093befcc698dc45a43ac9a10dd681f43d26d8c0bd8764b28cb664d4e9b1b8",
-   "url": "packs/dryberry.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/dryberry.zip",
    "min_app_build": 11
   },
   {
@@ -166,7 +166,7 @@
    "version": 1,
    "size_bytes": 23838484,
    "sha256": "ff7d67569c8532a49bf6d2fca31ba70a3505962325567d487f36c3160904447b",
-   "url": "packs/kakagi.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/kakagi.zip",
    "min_app_build": 11
   },
   {
@@ -191,7 +191,7 @@
    "version": 1,
    "size_bytes": 1709760,
    "sha256": "672ca980820c715c53431a4435102d8d021a6546db14d6d91842db173b1e9a55",
-   "url": "packs/kashagawigamog.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/kashagawigamog.zip",
    "min_app_build": 11
   },
   {
@@ -215,7 +215,7 @@
    "version": 1,
    "size_bytes": 3046966,
    "sha256": "23249532e26da8f78d8470375cba2fe2e1d96b888de9e9b1ea63042e42dc7d58",
-   "url": "packs/kennisis.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/kennisis.zip",
    "min_app_build": 11
   },
   {
@@ -237,7 +237,7 @@
    "version": 1,
    "size_bytes": 1804486,
    "sha256": "29c5c8849aa628248fe8f7cec51b72d2de8d751edb7be87ee6fa641c6f6c40c7",
-   "url": "packs/kushog.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/kushog.zip",
    "min_app_build": 11
   },
   {
@@ -261,7 +261,7 @@
    "version": 1,
    "size_bytes": 45772179,
    "sha256": "01b40fd8dfc887c1e13d6447434133e9f15569abee44d8ebd19217283e03914c",
-   "url": "packs/lacdesmillelacs.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/lacdesmillelacs.zip",
    "min_app_build": 11
   },
   {
@@ -286,7 +286,7 @@
    "version": 2,
    "size_bytes": 2776795,
    "sha256": "4b1baaa03419ac633707c3eb9f3e92ad39e8bef879095558458c1cf214715936",
-   "url": "packs/bernard.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/bernard.zip",
    "min_app_build": 11
   },
   {
@@ -310,7 +310,7 @@
    "version": 3,
    "size_bytes": 5938176,
    "sha256": "ae7027b44113671546a69c56c8fede08f70543a761cc39feb25359c407d4fa0b",
-   "url": "packs/scugog.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/scugog.zip",
    "min_app_build": 11
   },
   {
@@ -334,7 +334,7 @@
    "version": 1,
    "size_bytes": 35912236,
    "sha256": "0fefc2bc83fdbf98fec11f0510daebb043ff020de0757c823e59896e0c2c1dc3",
-   "url": "packs/temagami.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/temagami.zip",
    "min_app_build": 11
   },
   {
@@ -358,7 +358,7 @@
    "version": 2,
    "size_bytes": 4189224,
    "sha256": "6997bb423050080cafff32376a64f455e141969c28ee8dbe3302d2cdc672a770",
-   "url": "packs/mindemoya.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/mindemoya.zip",
    "min_app_build": 11
   },
   {
@@ -382,7 +382,7 @@
    "version": 2,
    "size_bytes": 31966524,
    "sha256": "0378224023af14c5899cf891e759e20d03da17e00480566d717879cb5357188f",
-   "url": "packs/minnitaki.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/minnitaki.zip",
    "min_app_build": 11
   },
   {
@@ -407,7 +407,7 @@
    "version": 2,
    "size_bytes": 13158638,
    "sha256": "227975f1ddb09817e2506182d45ca6dba86a4724b608cf592f5fc457f285b312",
-   "url": "packs/pakwash.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/pakwash.zip",
    "min_app_build": 11
   },
   {
@@ -431,7 +431,7 @@
    "version": 1,
    "size_bytes": 3738127,
    "sha256": "11de39be5cb6c4d95b2d077338c727023d85018e948ff30ee02f71dd962e5c3c",
-   "url": "packs/pelican.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/pelican.zip",
    "min_app_build": 11
   },
   {
@@ -456,7 +456,7 @@
    "version": 1,
    "size_bytes": 5946037,
    "sha256": "2cd2d0e92a9f749bbd4aa35ac0661026359e88bf94a29501871c3d53c68b16e8",
-   "url": "packs/perrault.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/perrault.zip",
    "min_app_build": 11
   },
   {
@@ -481,7 +481,7 @@
    "version": 2,
    "size_bytes": 7703809,
    "sha256": "44d4c2d5406351332c85a67cdb8a145b0341baf83a116b437aa5d9b5aaccac54",
-   "url": "packs/pigeon.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/pigeon.zip",
    "min_app_build": 11
   },
   {
@@ -505,7 +505,7 @@
    "version": 1,
    "size_bytes": 11098459,
    "sha256": "080f7cd11e7c3e3252e437217216d5017220e05662b0b00e8b276dc01678c942",
-   "url": "packs/rice.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/rice.zip",
    "min_app_build": 11
   },
   {
@@ -530,7 +530,7 @@
    "version": 2,
    "size_bytes": 11141928,
    "sha256": "902ad4d79b502113642a0616d3d4aa2afe0a26c3e5012a6e21650b4f1828cdf2",
-   "url": "packs/wabaskang.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/wabaskang.zip",
    "min_app_build": 11
   },
   {
@@ -555,7 +555,7 @@
    "version": 1,
    "size_bytes": 20550159,
    "sha256": "e2648353427bbc9a727ac91c6b186187f11251b089d67088ad4e7896d7c9030d",
-   "url": "packs/wabigoon.zip",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/wabigoon.zip",
    "min_app_build": 11
   }
  ]
