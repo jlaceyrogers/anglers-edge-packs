@@ -244,6 +244,28 @@
    "min_app_build": 11
   },
   {
+   "id": "ab-buffalo",
+   "name": "Buffalo Lake",
+   "center": [
+    -112.85873739513569,
+    52.479979148256696
+   ],
+   "zoom": 10.5,
+   "area_km2": 91.19,
+   "species_extra": [],
+   "features": {
+    "waterlevel": true
+   },
+   "blurb": "Contour-derived bathymetry from AGS depth contours (historic Alberta Environment hydrographic charts digitized 2004, standardized 2008; original chart survey years NOT recorded). No depth soundings exist for this lake (0 in the AGS point dataset, verified) - depths are interpolated between survey contours and capped at 7.6 m; confidence is strictly distance-to-contour (28.1% of water cells at >=0.4). No ARA-equivalent dataset exists for Alberta - thermal regime, Secchi and fish community use documented fallbacks.",
+   "_notes": "Sources: Alberta AGS lake bathymetry (DIG 2008-0556; 9 contour features touching, 22,048 vertices inside, depths 1.52-6.10 m); OHN-equivalent AB waterbody polygon; retrieved/verified 2026-10. DEM max 7.6 m; deep-hole cap 7.6 m (deepest survey contour 6.1 m + one interval); lake_cells 911,945. Confidence>=0.4 support 28.1% of water cells. Analysis CRS EPSG:32612. Thermal: no ARA-equivalent - step07 auto-built from stage-1 summary (area 91.19 km2, max 6.1 m contour fallback); Secchi fallback default. Species: none beyond baseline evidenced. BsM: 0 records (honest-empty). Waterlevel: config/waterlevel.json built. Pack app/data footprint 18 MB. Zoom 10.5 from area-band rule (91.2 km2).",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 7374038,
+   "sha256": "d929dd4136e6c75112f1683dd7a75c8f5c6faa4182634afd4e448f3e93922c0b",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/ab-buffalo.zip",
+   "min_app_build": 11
+  },
+  {
    "id": "cameron",
    "name": "Cameron Lake",
    "center": [
@@ -717,6 +739,28 @@
    "size_bytes": 11114137,
    "sha256": "09a90da837a4d8d8b47004bb94fdcdea18ea206ab84cce918eb02634a7addc8e",
    "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/lakeofbays.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "longbow",
+   "name": "Longbow Lake",
+   "center": [
+    -94.31076093820252,
+    49.71571856252988
+   ],
+   "zoom": 12,
+   "area_km2": 7.0,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Bathymetry digitized (2026-10) from the scanned historic MNR paper bathymetric map for this lake (WBY.LID.15-4058-55081; Ontario GeoHub Historic Bathymetry Maps, OGL-Ontario) - 10 ft contour intervals, 217 contours, survey year unrecorded. No LIO Bathymetry Line/Point coverage exists for this water. Deepest mapped contour 70 ft (21.3 m); two separate deep holes. Thermal regime Cool from the ARA record (OGF_ID 126010321); ARA max/mean depth and Secchi are null - documented fallbacks apply (uncalibrated).",
+   "_notes": "Sources: scanned historic MNR contour map digitized 2026-10 (georeferenced to the LIO waterbody polygon via island + narrows control points with thin-plate-spline correction; scale verified against the printed scale bar); LIO layer 25 OHN waterbody polygon OGF_ID 126010321 (7.0 km2); ARA water poly segment record (THERMAL_REGIME=Cool, depths/Secchi null); LIO bathymetry index (2 records, SURVEY_YEAR unrecorded). 217 contour features, depths 3.05-21.34 m (10-70 ft); 98.6% of contour vertices inside the LIO polygon. DEM 0-24.4 m; deep-hole cap 24.4 m. Analysis CRS EPSG:32615. 34 hand-read depth labels used as digitization anchors; 17 satisfied exactly, 2 re-associated, 1 dropped as corrupted, 14 dropped (extraction gaps, logged). Fish community from ARA: Walleye, Northern Pike, Large/Smallmouth Bass, Cisco, Burbot, Yellow Perch and others. Waterlevel: none (no gauge). Zoom 12 from area-band rule (7.0 km2).",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 1817846,
+   "sha256": "50932faae2671eda74a0eebda5400b77b637b5509e8527f62f746d8d7c994992",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/longbow.zip",
    "min_app_build": 11
   },
   {
@@ -1237,6 +1281,28 @@
    "min_app_build": 11
   },
   {
+   "id": "ab-sturgeon",
+   "name": "Sturgeon Lake",
+   "center": [
+    -117.5242,
+    55.1033
+   ],
+   "zoom": 10.5,
+   "area_km2": 48.51,
+   "species_extra": [],
+   "features": {
+    "waterlevel": true
+   },
+   "blurb": "Contour-derived bathymetry from AGS depth contours (historic Alberta Environment hydrographic charts digitized 2004, standardized 2008; original chart survey years NOT recorded). 67 contour features, depths 1.4-9.4 m; no depth soundings exist in the AGS point dataset (verified). Depths interpolated between contours, capped at 10.4 m; confidence is distance-to-contour (61.3% of water cells at >=0.4). No ARA-equivalent dataset exists for Alberta - thermal/Secchi/fish-community use documented fallbacks.",
+   "_notes": "Sources: Alberta AGS lake bathymetry (67 contours, depths 1.4-9.4 m); AB waterbody polygon 48.51 km2. DEM cap 10.4 m; 485,067 water cells. Confidence>=0.4 support 61.3%. CRS EPSG:32612. Thermal auto-built from stage-1 summary; Secchi fallback. BsM: 0 records (honest-empty). Waterlevel: config/waterlevel.json built. Pack footprint 15 MB. Zoom 10.5 (48.5 km2).",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 6767906,
+   "sha256": "bc2747472eb7990d4855a998a3746a373040ea61bae8f3a2746cd18e2970015f",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/ab-sturgeon.zip",
+   "min_app_build": 11
+  },
+  {
    "id": "ab-sylvan",
    "name": "Sylvan Lake",
    "center": [
@@ -1448,6 +1514,28 @@
    "size_bytes": 5515516,
    "sha256": "981851fc6e24e8a90f7a5381c84a9994b4c71a470e8bd642297cc11f36be26ba",
    "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/white.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "ab-whitefish",
+   "name": "Whitefish Lake",
+   "center": [
+    -111.8993,
+    54.3683
+   ],
+   "zoom": 11.0,
+   "area_km2": 30.38,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from AGS depth contours (historic Alberta Environment hydrographic charts digitized 2004, standardized 2008; original chart survey years NOT recorded). 25 contour features, depths 3.05-33.53 m; no depth soundings exist in the AGS point dataset (verified). Depths interpolated between contours, capped at 36.6 m; confidence is distance-to-contour (80.9% of water cells at >=0.4). No ARA-equivalent dataset exists for Alberta - thermal/Secchi/fish-community use documented fallbacks.",
+   "_notes": "Sources: Alberta AGS lake bathymetry (25 contours touching, depths 3.05-33.53 m); AB waterbody polygon 30.38 km2. DEM cap 36.6 m; 303,799 water cells. Confidence>=0.4 support 80.9%. CRS EPSG:32612. Thermal auto-built from stage-1 summary; Secchi fallback. BsM: 0 records (honest-empty). Waterlevel: none. Pack footprint 7.3 MB. Zoom 11.0 (30.4 km2).",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 3768889,
+   "sha256": "07dbc86b037df360101db7fde9c20b4e190dc820c63b5cc2fe4fdcee1b346842",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/ab-whitefish.zip",
    "min_app_build": 11
   },
   {
