@@ -266,6 +266,30 @@
    "min_app_build": 11
   },
   {
+   "id": "calabogie",
+   "name": "Calabogie Lake",
+   "center": [
+    -76.75217548217671,
+    45.275410526500934
+   ],
+   "zoom": 11.5,
+   "area_km2": 11.31,
+   "species_extra": [
+    "Cisco"
+   ],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from an unrecorded-year MNRF transect survey (SURVEY_YEAR is 0/null in the LIO bathymetry index records and feature dates are null). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 27.4 m; confidence is strictly distance-to-contour (70.1% of water cells at >=0.4). Cold-regime lake; cisco, walleye, smallmouth bass in the ARA community. Secchi 4 m is a FALLBACK default (ARA Secchi null).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 0 soundings in envelope, 0 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-04. 22 contour features touching / 18,880 vertices inside, depths 3-24.4 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Survey year(s) unrecorded-year in the LIO bathymetry index (1 record(s)); contour SURVEY_DATE null. DEM max 26.45 m; deep-hole cap 27.4 m (depth capped at deepest survey contour (24.4 m) + one 3.05 m (20 ft) contour interval to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (ARA record max 31.1 m).); 0 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 70.1% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32618. Thermal: Cold regime (ARA); Secchi 4 m is a FALLBACK default; ARA record max 31.1 m. Species: Cisco: ARA; ARA community 20 taxa. BsM query returned 26 records. Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 3.5 MB. Zoom 11.5 from area-band rule (11.31 km2; bbox span 4.7x5.3 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 1584216,
+   "sha256": "403be9737b965c0e1f72e65afd8fbb9a2fb0bc9e2573d337cab10c9fc1969cb5",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/calabogie.zip",
+   "min_app_build": 11
+  },
+  {
    "id": "cameron",
    "name": "Cameron Lake",
    "center": [
@@ -337,6 +361,30 @@
    "size_bytes": 1601590,
    "sha256": "286065f6deb958b2c7bbc07066dcbf7e658674224c09a579520f5467cf41735f",
    "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/crane.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "dalrymple",
+   "name": "Dalrymple Lake",
+   "center": [
+    -79.11231039480069,
+    44.63917594619
+   ],
+   "zoom": 11,
+   "area_km2": 13.85,
+   "species_extra": [
+    "Muskellunge"
+   ],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from a 1967 MNRF transect survey (year from the LIO bathymetry index; contour feature dates are null in LIO). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 12.2 m; confidence is strictly distance-to-contour (41.1% of water cells at >=0.4). Warm-regime lake; walleye, smallmouth bass, largemouth bass in the ARA community. Muskellunge confirmed (ARA). Secchi 3 m (ARA).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 0 soundings in envelope, 0 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-04. 13 contour features touching / 3,356 vertices inside, depths 1.5-9.1 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Survey year(s) 1967 in the LIO bathymetry index (1 record(s)); contour SURVEY_DATE null. DEM max 12.2 m; deep-hole cap 12.2 m (depth capped at deepest survey contour (9.1 m) + one 3.05 m (20 ft) contour interval to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (ARA record max 17.7 m).); 25 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 41.1% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32617. Thermal: Warm regime (ARA); Secchi 3 m (ARA); ARA record max 17.7 m. Species: Muskellunge: ARA; ARA community 26 taxa. BsM query returned 40 records. Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 5.0 MB. Zoom 11 from area-band rule (13.85 km2; bbox span 4.2x11.0 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 1659031,
+   "sha256": "1b46cb820186dbca5b8c5246d77604c1eba729e9de9373116396f05a6efcdbf9",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/dalrymple.zip",
    "min_app_build": 11
   },
   {
@@ -432,6 +480,31 @@
    "min_app_build": 11
   },
   {
+   "id": "golden",
+   "name": "Golden Lake",
+   "center": [
+    -77.34605923746916,
+    45.572938256069484
+   ],
+   "zoom": 11,
+   "area_km2": 35.67,
+   "species_extra": [
+    "Cisco",
+    "Muskellunge"
+   ],
+   "features": {
+    "waterlevel": true
+   },
+   "blurb": "Contour-derived bathymetry from a 1962 MNRF transect survey (year from the LIO bathymetry index; contour feature dates are null in LIO). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 27.4 m; confidence is strictly distance-to-contour (62.5% of water cells at >=0.4). Cold-regime lake; lake trout, cisco, walleye in the ARA community. Muskellunge confirmed (ARA). Secchi 4 m (ARA).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 0 soundings in envelope, 0 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-04. 44 contour features touching / 26,407 vertices inside, depths 1.5-24.4 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Survey year(s) 1962 in the LIO bathymetry index (1 record(s)); contour SURVEY_DATE null. DEM max 27.4 m; deep-hole cap 27.4 m (depth capped at deepest survey contour (24.4 m) + one 3.05 m (20 ft) contour interval to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (ARA record max 24.4 m).); 724 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 62.5% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32618. Thermal: Cold regime (ARA); Secchi 4 m (ARA); ARA record max 24.4 m. Species: Cisco, Muskellunge: ARA; ARA community 29 taxa. BsM query returned 76 records. Waterlevel: gauge ? '?' -> config/waterlevel.json built. Pack app/data footprint 9.3 MB. Zoom 11 from area-band rule (35.67 km2; bbox span 10.4x6.5 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 4174732,
+   "sha256": "51684c438d49f6a1954394abd0bf76492353d2e33a6acc7e8a00bf673f314adb",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/golden.zip",
+   "min_app_build": 11
+  },
+  {
    "id": "ab-gull",
    "name": "Gull Lake",
    "center": [
@@ -451,6 +524,30 @@
    "size_bytes": 7591257,
    "sha256": "94e36bc82dada6c6e44984e917565d5d3751f703414dc4dbbaa628eb3349c3a1",
    "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/ab-gull.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "gull",
+   "name": "Gull Lake",
+   "center": [
+    -78.7812583992153,
+    44.846631957740264
+   ],
+   "zoom": 11.5,
+   "area_km2": 10.5,
+   "species_extra": [
+    "Cisco"
+   ],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from 1958/1968/1973/1987 MNRF transect surveys (years from the LIO bathymetry index; contour feature dates are null in LIO). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 54.9 m; confidence is strictly distance-to-contour (97.4% of water cells at >=0.4). Cold-regime lake; lake trout, cisco, walleye in the ARA community. Secchi 5.3 m (ARA).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 0 soundings in envelope, 0 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-04. 77 contour features touching / 11,330 vertices inside, depths 0.9-48.8 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Survey year(s) 1958/1968/1973/1987 in the LIO bathymetry index (14 record(s)); contour SURVEY_DATE null. DEM max 54.9 m; deep-hole cap 54.9 m (depth capped at deepest survey contour (48.8 m) + one 6.10 m (20 ft) contour interval to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (no ARA max-depth record).); 20 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 97.4% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32617. Thermal: Cold regime (ARA); Secchi 5.3 m (ARA); no ARA max-depth record. Species: Cisco: ARA; ARA community 23 taxa. BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 5.6 MB. Zoom 11.5 from area-band rule (10.50 km2; bbox span 4.4x9.0 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 2323413,
+   "sha256": "d44942073cbbf6ca2267a5fad432df58e612e5c66ed59bab42dce6d153e108d9",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/gull.zip",
    "min_app_build": 11
   },
   {
@@ -525,6 +622,30 @@
    "size_bytes": 1709760,
    "sha256": "672ca980820c715c53431a4435102d8d021a6546db14d6d91842db173b1e9a55",
    "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/kashagawigamog.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "kashwakamak",
+   "name": "Kashwakamak Lake",
+   "center": [
+    -77.05572445403588,
+    44.85360216753807
+   ],
+   "zoom": 11.5,
+   "area_km2": 11.65,
+   "species_extra": [
+    "Cisco"
+   ],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from a 1979 MNRF transect survey (year from the LIO bathymetry index; contour feature dates are null in LIO). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 24.3 m; confidence is strictly distance-to-contour (60.4% of water cells at >=0.4). Cool-regime lake; cisco, walleye, smallmouth bass in the ARA community. Secchi 5.4 m (ARA).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 0 soundings in envelope, 0 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-04. 18 contour features touching / 2,806 vertices inside, depths 3-21.3 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Survey year(s) 1979 in the LIO bathymetry index (1 record(s)); contour SURVEY_DATE null. DEM max 24.3 m; deep-hole cap 24.3 m (depth capped at deepest survey contour (21.3 m) + one 3.05 m (20 ft) contour interval to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (no ARA max-depth record).); 123 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 60.4% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32618. Thermal: Cool regime (ARA); Secchi 5.4 m (ARA); no ARA max-depth record. Species: Cisco: ARA; ARA community 25 taxa. BsM query returned 43 records. Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 11.5 MB. Zoom 11.5 from area-band rule (11.65 km2; bbox span 13.3x9.0 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 2335937,
+   "sha256": "27ddbd61abe3758549b0626c1e9bef76483c00dcecf4570a3185297658f0c510",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/kashwakamak.zip",
    "min_app_build": 11
   },
   {
@@ -667,6 +788,31 @@
    "size_bytes": 8144833,
    "sha256": "439bf1623a8b08d895bc06941987d38b914d1d78930fc9d10014d441ff36c6be",
    "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/manitou.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "nosbonsing",
+   "name": "Lake Nosbonsing",
+   "center": [
+    -79.18936572746249,
+    46.21198053283474
+   ],
+   "zoom": 11,
+   "area_km2": 17.71,
+   "species_extra": [
+    "Cisco",
+    "Muskellunge"
+   ],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from an unrecorded-year MNRF transect survey (SURVEY_YEAR is 0/null in the LIO bathymetry index records and feature dates are null). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 16.7 m; confidence is strictly distance-to-contour (84.8% of water cells at >=0.4). Warm-regime lake; cisco, walleye, smallmouth bass in the ARA community. Muskellunge confirmed (ARA). Secchi 3.1 m (ARA).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 0 soundings in envelope, 0 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-04. 37 contour features touching / 26,185 vertices inside, depths 1.5-13.7 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Survey year(s) unrecorded-year in the LIO bathymetry index (1 record(s)); contour SURVEY_DATE null. DEM max 16.7 m; deep-hole cap 16.7 m (depth capped at deepest survey contour (13.7 m) + one 3.05 m (20 ft) contour interval to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (ARA record max 14.0 m).); 305 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 84.8% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32617. Thermal: Warm regime (ARA); Secchi 3.1 m (ARA); ARA record max 14.02 m. Species: Cisco, Muskellunge: ARA; ARA community 24 taxa. BsM query returned 65 records. Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 8.3 MB. Zoom 11 from area-band rule (17.71 km2; bbox span 10.2x5.8 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 3649202,
+   "sha256": "4051bb2ee508e4d115be9f6c2e8bd68615f72227a2887a02fef8b679900adf3f",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/nosbonsing.zip",
    "min_app_build": 11
   },
   {
@@ -877,6 +1023,28 @@
    "size_bytes": 31966524,
    "sha256": "0378224023af14c5899cf891e759e20d03da17e00480566d717879cb5357188f",
    "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/minnitaki.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "mississippi",
+   "name": "Mississippi Lake",
+   "center": [
+    -76.16481874804232,
+    45.068573193153654
+   ],
+   "zoom": 11,
+   "area_km2": 24.37,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from a 1969 MNRF transect survey (year from the LIO bathymetry index; contour feature dates are null in LIO). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 12.2 m; confidence is strictly distance-to-contour (46.7% of water cells at >=0.4). Warm-regime lake; walleye, smallmouth bass, largemouth bass in the ARA community. Secchi 2.5 m (ARA).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 0 soundings in envelope, 0 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-04. 46 contour features touching / 9,976 vertices inside, depths 1.8-9.1 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Survey year(s) 1969 in the LIO bathymetry index (1 record(s)); contour SURVEY_DATE null. DEM max 12.2 m; deep-hole cap 12.2 m (depth capped at deepest survey contour (9.1 m) + one 3.05 m (20 ft) contour interval to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (ARA record max 9.1 m).); 3310 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 46.7% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32618. Thermal: Warm regime (ARA); Secchi 2.5 m (ARA); ARA record max 9.14 m. Species: no beyond-baseline sportfish evidenced; ARA community 29 taxa. BsM query returned 27 records. Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 10.6 MB. Zoom 11 from area-band rule (24.37 km2; bbox span 7.2x12.9 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 3622570,
+   "sha256": "0189385f0ddc51367842af154f0ee49df2fd8ae67344242e639027fa7240568f",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/mississippi.zip",
    "min_app_build": 11
   },
   {
@@ -1231,6 +1399,30 @@
    "min_app_build": 11
   },
   {
+   "id": "sparrow",
+   "name": "Sparrow Lake",
+   "center": [
+    -79.38603144562838,
+    44.81848488446278
+   ],
+   "zoom": 11.5,
+   "area_km2": 10.5,
+   "species_extra": [
+    "Muskellunge"
+   ],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from a 1968 MNRF transect survey (year from the LIO bathymetry index; contour feature dates are null in LIO). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 15.2 m; confidence is strictly distance-to-contour (85.6% of water cells at >=0.4). Cool-regime lake; walleye, smallmouth bass, largemouth bass in the ARA community. Muskellunge confirmed (ARA). Secchi 2.4 m (ARA).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 0 soundings in envelope, 0 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-04. 43 contour features touching / 22,553 vertices inside, depths 0.9-12.2 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Survey year(s) 1968 in the LIO bathymetry index (2 record(s)); contour SURVEY_DATE null. DEM max 15.07 m; deep-hole cap 15.2 m (depth capped at deepest survey contour (12.2 m) + one 3.05 m (20 ft) contour interval to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (no ARA max-depth record).); 0 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 85.6% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32617. Thermal: Cool regime (ARA); Secchi 2.4 m (ARA); no ARA max-depth record. Species: Muskellunge: ARA; ARA community 17 taxa. BsM query returned 43 records. Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 3.9 MB. Zoom 11.5 from area-band rule (10.50 km2; bbox span 3.4x6.4 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 2184854,
+   "sha256": "a0e9fde19ee8c9829e39fc76d6ff129db3fa07ca5dc0ae3838c8e567d784e5f7",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/sparrow.zip",
+   "min_app_build": 11
+  },
+  {
    "id": "stony",
    "name": "Stony Lake",
    "center": [
@@ -1322,6 +1514,30 @@
    "size_bytes": 4979209,
    "sha256": "904995882b641905f56b87278f8d99edb9187e8f40af853b613309b6915eefae",
    "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/ab-sylvan.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "threemile",
+   "name": "Three Mile Lake",
+   "center": [
+    -79.42768812801964,
+    45.18050167108093
+   ],
+   "zoom": 11.5,
+   "area_km2": 8.56,
+   "species_extra": [
+    "Cisco"
+   ],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from 1972/1973 MNRF transect surveys (years from the LIO bathymetry index; contour feature dates are null in LIO). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 12.2 m; confidence is strictly distance-to-contour (71.2% of water cells at >=0.4). Cool-regime lake; cisco, walleye, smallmouth bass in the ARA community. Secchi 1.5 m (ARA).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 0 soundings in envelope, 0 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-04. 18 contour features touching / 5,431 vertices inside, depths -0-9.1 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Survey year(s) 1972/1973 in the LIO bathymetry index (5 record(s)); contour SURVEY_DATE null. DEM max 12.2 m; deep-hole cap 12.2 m (depth capped at deepest survey contour (9.1 m) + one 3.05 m (20 ft) contour interval to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (ARA record max 11.0 m).); 6105 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 71.2% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32617. Thermal: Cool regime (ARA); Secchi 1.5 m (ARA); ARA record max 11 m. Species: Cisco: ARA; ARA community 12 taxa. BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 4.9 MB. Zoom 11.5 from area-band rule (8.56 km2; bbox span 7.3x4.4 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 2264405,
+   "sha256": "d7fbad2b27362edf1ce65d8fca2ce26d7916f86737c033215e7d03406459f213",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/threemile.zip",
    "min_app_build": 11
   },
   {
