@@ -505,6 +505,28 @@
    "min_app_build": 11
   },
   {
+   "id": "mn-green",
+   "name": "Green Lake",
+   "center": [
+    -94.90514250572164,
+    45.25184289767131
+   ],
+   "zoom": 11,
+   "area_km2": 22.5,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from the Minnesota DNR lake survey of 1969 (contours digitized by the DNR from its survey map). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 36.6 m; confidence is strictly distance-to-contour (89.2% of water cells at >=0.4). No fish-community or water-clarity record is wired for Minnesota in v1 - thermal regime, Secchi and fish community use documented fallbacks (DNR lake survey data is a v2 source).",
+   "_notes": "Sources: Minnesota DNR Lake Bathymetric Outlines, Contours and DEM (Minnesota Geospatial Commons; DOW 34007900, DNR map B0178); no ARA-equivalent record; retrieved/verified 2026-11-08. 101 contour features touching / 8,801 vertices inside, depths 0-33.5 m (contour depths (m): [0.0, 1.52, 3.05, 4.57, 6.1, 9.14, 12.19, 15.24, 18.29, 21.34, 24.38, 27.43, 30.48, 33.53]; spacings (m): [1.52, 1.53, 3.04, 3.05] (mixed intervals, as digitized in the MNDNR dataset)). Survey year 1969 from the DNR bathymetry metadata field-work end date. DEM max 34.13 m; deep-hole cap 36.6 m (depth capped at deepest survey contour (33.5 m) + one 3.05 m contour interval (gap between this lake's two deepest contour levels) to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (no surveyed max-depth record).); 0 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 89.2% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32615. Thermal: no ARA-equivalent - auto-built from stage-1 summary; Secchi 4 m fallback default. Species: none beyond baseline evidenced (no community source wired). BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 6.3 MB. Zoom 11 from area-band rule (22.50 km2; bbox span 6.0x5.3 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 3608100,
+   "sha256": "066f7c4a8fc9f4b07131ed4adc5c304450c6db1045a782bb20c37673959e8e53",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/mn-green.zip",
+   "min_app_build": 11
+  },
+  {
    "id": "ab-gull",
    "name": "Gull Lake",
    "center": [
@@ -548,6 +570,28 @@
    "size_bytes": 2323413,
    "sha256": "d44942073cbbf6ca2267a5fad432df58e612e5c66ed59bab42dce6d153e108d9",
    "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/gull.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "mn-gull",
+   "name": "Gull Lake",
+   "center": [
+    -94.34001235856323,
+    46.44820723488137
+   ],
+   "zoom": 11,
+   "area_km2": 40.34,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from the Minnesota DNR lake survey of 1954 (contours digitized by the DNR from its survey map). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 27.4 m; confidence is strictly distance-to-contour (75.2% of water cells at >=0.4). No fish-community or water-clarity record is wired for Minnesota in v1 - thermal regime, Secchi and fish community use documented fallbacks (DNR lake survey data is a v2 source).",
+   "_notes": "Sources: Minnesota DNR Lake Bathymetric Outlines, Contours and DEM (Minnesota Geospatial Commons; DOW 11030500, DNR map B0105); no ARA-equivalent record; retrieved/verified 2026-11-08. 87 contour features touching / 13,103 vertices inside, depths 0-24.4 m (contour depths (m): [0.0, 3.05, 6.1, 9.14, 12.19, 15.24, 18.29, 21.34, 24.38]; spacings (m): [3.04, 3.05] (mixed intervals, as digitized in the MNDNR dataset)). Survey year 1954 from the DNR bathymetry metadata field-work end date. DEM max 27.4 m; deep-hole cap 27.4 m (depth capped at deepest survey contour (24.4 m) + one 3.04 m contour interval (gap between this lake's two deepest contour levels) to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (no surveyed max-depth record).); 2132 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 75.2% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32615. Thermal: no ARA-equivalent - auto-built from stage-1 summary; Secchi 4 m fallback default. Species: none beyond baseline evidenced (no community source wired). BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 16.9 MB. Zoom 11 from area-band rule (40.34 km2; bbox span 9.4x13.9 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 6641579,
+   "sha256": "b562474209ecfdb037f28440d7a6046385101ee1ded723dc926b2ffd90902780",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/mn-gull.zip",
    "min_app_build": 11
   },
   {
@@ -791,6 +835,72 @@
    "min_app_build": 11
   },
   {
+   "id": "mn-miltona",
+   "name": "Lake Miltona",
+   "center": [
+    -95.36837480511367,
+    46.03849904586228
+   ],
+   "zoom": 11,
+   "area_km2": 23.17,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from the Minnesota DNR lake survey of 1961 (contours digitized by the DNR from its survey map). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 33.5 m; confidence is strictly distance-to-contour (76% of water cells at >=0.4). No fish-community or water-clarity record is wired for Minnesota in v1 - thermal regime, Secchi and fish community use documented fallbacks (DNR lake survey data is a v2 source).",
+   "_notes": "Sources: Minnesota DNR Lake Bathymetric Outlines, Contours and DEM (Minnesota Geospatial Commons; DOW 21008300, DNR map B0308); no ARA-equivalent record; retrieved/verified 2026-11-08. 90 contour features touching / 5,971 vertices inside, depths 0-30.5 m (contour depths (m): [0.0, 3.05, 4.57, 6.1, 9.14, 12.19, 15.24, 18.29, 21.34, 24.38, 27.43, 30.48]; spacings (m): [1.52, 1.53, 3.04, 3.05] (mixed intervals, as digitized in the MNDNR dataset)). Survey year 1961 from the DNR bathymetry metadata field-work end date. DEM max 31.73 m; deep-hole cap 33.5 m (depth capped at deepest survey contour (30.5 m) + one 3.05 m contour interval (gap between this lake's two deepest contour levels) to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (no surveyed max-depth record).); 0 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 76% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32615. Thermal: no ARA-equivalent - auto-built from stage-1 summary; Secchi 4 m fallback default. Species: none beyond baseline evidenced (no community source wired). BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 6.8 MB. Zoom 11 from area-band rule (23.17 km2; bbox span 9.0x4.8 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 3363577,
+   "sha256": "31ea1219c2b6e98ec4bc9393ebee29ee40fccd40abfc5a930c5d35c0689c70cd",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/mn-miltona.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "mn-minnetonka",
+   "name": "Lake Minnetonka",
+   "center": [
+    -93.55177021503329,
+    44.92961780922813
+   ],
+   "zoom": 10.5,
+   "area_km2": 57.49,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from the Minnesota DNR lake survey of 1949 (contours digitized by the DNR from its survey map). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 33.5 m; confidence is strictly distance-to-contour (95% of water cells at >=0.4). No fish-community or water-clarity record is wired for Minnesota in v1 - thermal regime, Secchi and fish community use documented fallbacks (DNR lake survey data is a v2 source).",
+   "_notes": "Sources: Minnesota DNR Lake Bathymetric Outlines, Contours and DEM (Minnesota Geospatial Commons; DOW 27013300, DNR map B0122); no ARA-equivalent record; retrieved/verified 2026-11-08. 518 contour features touching / 401,481 vertices inside, depths 0-30.5 m (contour depths (m): [0.0, 3.05, 6.1, 9.14, 12.19, 15.24, 18.29, 21.34, 24.38, 27.43, 30.48]; spacings (m): [3.04, 3.05] (mixed intervals, as digitized in the MNDNR dataset)). Survey year 1949 from the DNR bathymetry metadata field-work end date. DEM max 30.76 m; deep-hole cap 33.5 m (depth capped at deepest survey contour (30.5 m) + one 3.05 m contour interval (gap between this lake's two deepest contour levels) to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (no surveyed max-depth record).); 0 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 95% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32615. Thermal: no ARA-equivalent - auto-built from stage-1 summary; Secchi 4 m fallback default. Species: none beyond baseline evidenced (no community source wired). BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 24.0 MB. Zoom 10.5 from area-band rule (57.49 km2; bbox span 17.3x10.2 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 10453323,
+   "sha256": "ed7b952fac5ef9374745ae995f52e6c56f3c26716ba9f210572c34c75be2aff0",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/mn-minnetonka.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "mn-minnewaska",
+   "name": "Lake Minnewaska",
+   "center": [
+    -95.42802520780418,
+    45.62370094037598
+   ],
+   "zoom": 11,
+   "area_km2": 32.58,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from the Minnesota DNR lake survey of 1963 (contours digitized by the DNR from its survey map). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 10.7 m; confidence is strictly distance-to-contour (57.6% of water cells at >=0.4). No fish-community or water-clarity record is wired for Minnesota in v1 - thermal regime, Secchi and fish community use documented fallbacks (DNR lake survey data is a v2 source).",
+   "_notes": "Sources: Minnesota DNR Lake Bathymetric Outlines, Contours and DEM (Minnesota Geospatial Commons; DOW 61013000, DNR map B0328); no ARA-equivalent record; retrieved/verified 2026-11-08. 9 contour features touching / 2,360 vertices inside, depths 0-9.1 m (contour depths (m): [0.0, 1.52, 3.05, 4.57, 6.1, 7.62, 9.14]; spacings (m): [1.52, 1.53] (mixed intervals, as digitized in the MNDNR dataset)). Survey year 1963 from the DNR bathymetry metadata field-work end date. DEM max 10.7 m; deep-hole cap 10.7 m (depth capped at deepest survey contour (9.1 m) + one 1.52 m contour interval (gap between this lake's two deepest contour levels) to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (no surveyed max-depth record).); 2341 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 57.6% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32615. Thermal: no ARA-equivalent - auto-built from stage-1 summary; Secchi 4 m fallback default. Species: none beyond baseline evidenced (no community source wired). BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 8.9 MB. Zoom 11 from area-band rule (32.58 km2; bbox span 11.2x7.0 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 3269237,
+   "sha256": "d2579958ca0d053b6542a25df4c9a50107e4144ea7c0621b5face68d575742ce",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/mn-minnewaska.zip",
+   "min_app_build": 11
+  },
+  {
    "id": "nosbonsing",
    "name": "Lake Nosbonsing",
    "center": [
@@ -813,6 +923,28 @@
    "size_bytes": 3649202,
    "sha256": "4051bb2ee508e4d115be9f6c2e8bd68615f72227a2887a02fef8b679900adf3f",
    "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/nosbonsing.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "mn-osakis",
+   "name": "Lake Osakis",
+   "center": [
+    -95.11690397149047,
+    45.908731383269675
+   ],
+   "zoom": 11,
+   "area_km2": 25.62,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from the Minnesota DNR lake survey of 1964 (contours digitized by the DNR from its survey map). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 21.3 m; confidence is strictly distance-to-contour (71.5% of water cells at >=0.4). No fish-community or water-clarity record is wired for Minnesota in v1 - thermal regime, Secchi and fish community use documented fallbacks (DNR lake survey data is a v2 source).",
+   "_notes": "Sources: Minnesota DNR Lake Bathymetric Outlines, Contours and DEM (Minnesota Geospatial Commons; DOW 77021500, DNR map B0160); no ARA-equivalent record; retrieved/verified 2026-11-08. 82 contour features touching / 7,375 vertices inside, depths 0-18.3 m (contour depths (m): [0.0, 1.52, 3.05, 4.57, 6.1, 9.14, 12.19, 15.24, 18.29]; spacings (m): [1.52, 1.53, 3.04, 3.05] (mixed intervals, as digitized in the MNDNR dataset)). Survey year 1964 from the DNR bathymetry metadata field-work end date. DEM max 20.96 m; deep-hole cap 21.3 m (depth capped at deepest survey contour (18.3 m) + one 3.05 m contour interval (gap between this lake's two deepest contour levels) to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (no surveyed max-depth record).); 0 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 71.5% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32615. Thermal: no ARA-equivalent - auto-built from stage-1 summary; Secchi 4 m fallback default. Species: none beyond baseline evidenced (no community source wired). BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 9.0 MB. Zoom 11 from area-band rule (25.62 km2; bbox span 8.8x8.9 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 3130620,
+   "sha256": "61633f9be04fc7c8ce9951df6eb27244ec348c06dd2425ad33801351cf9cd5b5",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/mn-osakis.zip",
    "min_app_build": 11
   },
   {
@@ -1705,6 +1837,28 @@
    "size_bytes": 20550159,
    "sha256": "e2648353427bbc9a727ac91c6b186187f11251b089d67088ad4e7896d7c9030d",
    "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/wabigoon.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "mn-westbattle",
+   "name": "West Battle Lake",
+   "center": [
+    -95.67826447433578,
+    46.29288826667968
+   ],
+   "zoom": 11,
+   "area_km2": 22.52,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from the Minnesota DNR lake survey of 1977 (contours digitized by the DNR from its survey map). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 33.5 m; confidence is strictly distance-to-contour (87.2% of water cells at >=0.4). No fish-community or water-clarity record is wired for Minnesota in v1 - thermal regime, Secchi and fish community use documented fallbacks (DNR lake survey data is a v2 source).",
+   "_notes": "Sources: Minnesota DNR Lake Bathymetric Outlines, Contours and DEM (Minnesota Geospatial Commons; DOW 56023900, DNR map B0218); no ARA-equivalent record; retrieved/verified 2026-11-08. 96 contour features touching / 8,969 vertices inside, depths 0-30.5 m (contour depths (m): [0.0, 1.52, 3.05, 4.57, 6.1, 9.14, 12.19, 15.24, 18.29, 21.34, 24.38, 27.43, 30.48]; spacings (m): [1.52, 1.53, 3.04, 3.05] (mixed intervals, as digitized in the MNDNR dataset)). Survey year 1977 from the DNR bathymetry metadata field-work end date. DEM max 32.44 m; deep-hole cap 33.5 m (depth capped at deepest survey contour (30.5 m) + one 3.05 m contour interval (gap between this lake's two deepest contour levels) to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (no surveyed max-depth record).); 0 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 87.2% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32615. Thermal: no ARA-equivalent - auto-built from stage-1 summary; Secchi 4 m fallback default. Species: none beyond baseline evidenced (no community source wired). BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 7.0 MB. Zoom 11 from area-band rule (22.52 km2; bbox span 9.4x4.7 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 3445917,
+   "sha256": "53ffcdcf285696cd5685595df78525b4cc8340d33206be50c921e72bf5f2dbaa",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/mn-westbattle.zip",
    "min_app_build": 11
   },
   {
