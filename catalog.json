@@ -315,6 +315,50 @@
    "min_app_build": 11
   },
   {
+   "id": "ct-candlewood",
+   "name": "Candlewood Lake",
+   "center": [
+    -73.45882362399318,
+    41.500918414844406
+   ],
+   "zoom": 11,
+   "area_km2": 20.64,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from the CT DEEP bathymetric survey of 2002 (contours digitized by the agency from its survey). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 27.4 m; confidence is strictly distance-to-contour (87.5% of water cells at >=0.4). No fish-community or water-clarity record is wired for Connecticut in v1 - thermal regime, Secchi and fish community use documented fallbacks.",
+   "_notes": "Sources: Connecticut DEEP Lake Bathymetry Contours (CT ECO); source id 106, map DEEP WB 106; no ARA-equivalent record; retrieved/verified 2026-11-08. 521 contour features touching / 169,435 vertices inside, depths 0-24.4 m (contour depths (m): [0.0, 3.05, 6.1, 9.14, 12.19, 15.24, 18.29, 21.34, 24.38]; spacings (m): [3.04, 3.05] (mixed intervals, as digitized in the CTDEEP dataset)). Survey year 2002 as recorded by the source. DEM max 27.4 m; deep-hole cap 27.4 m (depth capped at deepest survey contour (24.4 m) + one 3.04 m contour interval (gap between this lake's two deepest contour levels) to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (CTDEEP surveyed max-depth point 25.9 m).); 4510 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 87.5% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32618. Thermal: no ARA-equivalent - auto-built from stage-1 summary; Secchi 4 m fallback default. Species: none beyond baseline evidenced (no community source wired). BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 13.9 MB. Zoom 11 from area-band rule (20.64 km2; bbox span 5.8x17.3 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 5528930,
+   "sha256": "f94d3c9f540d20354ca05afc70a0b8d6e90d41fb5c0d78a2a14a78c165d64ea5",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/ct-candlewood.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "mi-cass",
+   "name": "Cass Lake",
+   "center": [
+    -83.36095503983186,
+    42.61049844594021
+   ],
+   "zoom": 11.5,
+   "area_km2": 5.31,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from a Michigan DNR inland lake map (survey year not recorded in the source) (contours digitized by the agency from its survey). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 38.4 m; confidence is strictly distance-to-contour (88.7% of water cells at >=0.4). No fish-community or water-clarity record is wired for Michigan in v1 - thermal regime, Secchi and fish community use documented fallbacks.",
+   "_notes": "Sources: Michigan DNR Institute for Fisheries Research inland lake contours (Michigan GIS Open Data) with the USGS NHDPlus HR outline; source id 146647224, map IFR 63-1337; no ARA-equivalent record; retrieved/verified 2026-11-08. 95 contour features touching / 8,529 vertices inside, depths 0-37.5 m (contour depths (m): [0.0, 1.22, 1.52, 3.05, 6.1, 8.53, 9.14, 12.19, 15.24, 16.15, 17.37, 18.29, 19.51, 21.03, 21.34, 22.25, 23.47, 24.38, 27.43, 29.87, 30.48, 32.0, 33.53, 35.66, 36.58, 37.49]; spacings (m): [0.3, 0.31, 0.61, 0.91, 0.92, 1.22, 1.52, 1.53, 2.13, 2.43, 2.44, 3.05] (mixed intervals, as digitized in the MIDNR dataset)). Survey year not recorded by the source (honest null). DEM max 37.88 m; deep-hole cap 38.4 m (depth capped at deepest survey contour (37.5 m) + one 0.91 m contour interval (gap between this lake's two deepest contour levels) to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (MIDNR surveyed max-depth point 37.5 m).); 0 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 88.7% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32617. Thermal: no ARA-equivalent - auto-built from stage-1 summary; Secchi 4 m fallback default. Species: none beyond baseline evidenced (no community source wired). BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 2.7 MB. Zoom 11.5 from area-band rule (5.31 km2; bbox span 4.2x3.4 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 1290760,
+   "sha256": "9bd6355520cb33d8bcee28caacf4310d2cc1eea4568b5296c5194e1ff660b66e",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/mi-cass.zip",
+   "min_app_build": 11
+  },
+  {
    "id": "chemong",
    "name": "Chemong Lake",
    "center": [
@@ -595,6 +639,28 @@
    "min_app_build": 11
   },
   {
+   "id": "mi-gull",
+   "name": "Gull Lake",
+   "center": [
+    -85.41072770040573,
+    42.398439341621554
+   ],
+   "zoom": 11.5,
+   "area_km2": 8.28,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from a Michigan DNR inland lake map (survey year not recorded in the source) (contours digitized by the agency from its survey). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 36.6 m; confidence is strictly distance-to-contour (96.6% of water cells at >=0.4). No fish-community or water-clarity record is wired for Michigan in v1 - thermal regime, Secchi and fish community use documented fallbacks.",
+   "_notes": "Sources: Michigan DNR Institute for Fisheries Research inland lake contours (Michigan GIS Open Data) with the USGS NHDPlus HR outline; source id 152517995, map IFR 39-13; no ARA-equivalent record; retrieved/verified 2026-11-08. 34 contour features touching / 3,400 vertices inside, depths 1.5-33.5 m (contour depths (m): [1.52, 3.05, 6.1, 9.14, 12.19, 15.24, 18.29, 21.34, 24.38, 27.43, 30.48, 33.53]; spacings (m): [1.53, 3.04, 3.05] (mixed intervals, as digitized in the MIDNR dataset)). Survey year not recorded by the source (honest null). DEM max 36.6 m; deep-hole cap 36.6 m (depth capped at deepest survey contour (33.5 m) + one 3.05 m contour interval (gap between this lake's two deepest contour levels) to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (MIDNR surveyed max-depth point 33.5 m).); 74 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 96.6% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32616. Thermal: no ARA-equivalent - auto-built from stage-1 summary; Secchi 4 m fallback default. Species: none beyond baseline evidenced (no community source wired). BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 3.8 MB. Zoom 11.5 from area-band rule (8.28 km2; bbox span 4.1x6.2 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 1640232,
+   "sha256": "900ef8a5b1dae72d4b1b32ac5f67af3be3b8fb580603d65bc5ac49856813806f",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/mi-gull.zip",
+   "min_app_build": 11
+  },
+  {
    "id": "head",
    "name": "Head Lake",
    "center": [
@@ -617,6 +683,28 @@
    "size_bytes": 268721,
    "sha256": "5d76eb458139f1dcfc411505559a501bc56fb5458c9d2f67070b86a8ca91594d",
    "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/head.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "mi-higgins",
+   "name": "Higgins Lake",
+   "center": [
+    -84.75124721870084,
+    44.46892326892917
+   ],
+   "zoom": 11,
+   "area_km2": 41.27,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from a Michigan DNR inland lake map (survey year not recorded in the source) (contours digitized by the agency from its survey). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 42.7 m; confidence is strictly distance-to-contour (72.5% of water cells at >=0.4). No fish-community or water-clarity record is wired for Michigan in v1 - thermal regime, Secchi and fish community use documented fallbacks.",
+   "_notes": "Sources: Michigan DNR Institute for Fisheries Research inland lake contours (Michigan GIS Open Data) with the USGS NHDPlus HR outline; source id 121857622, map IFR 72-117; no ARA-equivalent record; retrieved/verified 2026-11-08. 46 contour features touching / 10,803 vertices inside, depths 0-39.6 m (contour depths (m): [0.0, 1.52, 3.05, 6.1, 9.14, 12.19, 15.24, 18.29, 21.34, 24.38, 27.43, 30.48, 33.53, 36.58, 39.62]; spacings (m): [1.52, 1.53, 3.04, 3.05] (mixed intervals, as digitized in the MIDNR dataset)). Survey year not recorded by the source (honest null). DEM max 42.7 m; deep-hole cap 42.7 m (depth capped at deepest survey contour (39.6 m) + one 3.04 m contour interval (gap between this lake's two deepest contour levels) to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (MIDNR surveyed max-depth point 39.6 m).); 224 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 72.5% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32616. Thermal: no ARA-equivalent - auto-built from stage-1 summary; Secchi 4 m fallback default. Species: none beyond baseline evidenced (no community source wired). BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 12.3 MB. Zoom 11 from area-band rule (41.27 km2; bbox span 8.9x9.8 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 5460691,
+   "sha256": "3140fce16c6af31ba69f7646519534a359151b8e2827340d2786cb8bb578f6eb",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/mi-higgins.zip",
    "min_app_build": 11
   },
   {
@@ -832,6 +920,50 @@
    "size_bytes": 8144833,
    "sha256": "439bf1623a8b08d895bc06941987d38b914d1d78930fc9d10014d441ff36c6be",
    "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/manitou.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "mi-margrethe",
+   "name": "Lake Margrethe",
+   "center": [
+    -84.78383998739085,
+    44.646559838303205
+   ],
+   "zoom": 11.5,
+   "area_km2": 7.79,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from a Michigan DNR inland lake map (survey year not recorded in the source) (contours digitized by the agency from its survey). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 21.3 m; confidence is strictly distance-to-contour (87.7% of water cells at >=0.4). No fish-community or water-clarity record is wired for Michigan in v1 - thermal regime, Secchi and fish community use documented fallbacks.",
+   "_notes": "Sources: Michigan DNR Institute for Fisheries Research inland lake contours (Michigan GIS Open Data) with the USGS NHDPlus HR outline; source id 60087990, map IFR 20-44; no ARA-equivalent record; retrieved/verified 2026-11-08. 34 contour features touching / 32,931 vertices inside, depths 1.5-19.8 m (contour depths (m): [1.52, 3.05, 4.57, 6.1, 7.62, 9.14, 10.67, 12.19, 13.72, 14.94, 15.24, 16.76, 18.29, 19.81]; spacings (m): [0.3, 1.22, 1.52, 1.53] (mixed intervals, as digitized in the MIDNR dataset)). Survey year not recorded by the source (honest null). DEM max 20.38 m; deep-hole cap 21.3 m (depth capped at deepest survey contour (19.8 m) + one 1.52 m contour interval (gap between this lake's two deepest contour levels) to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (MIDNR surveyed max-depth point 19.8 m).); 0 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 87.7% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32616. Thermal: no ARA-equivalent - auto-built from stage-1 summary; Secchi 4 m fallback default. Species: none beyond baseline evidenced (no community source wired). BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 2.9 MB. Zoom 11.5 from area-band rule (7.79 km2; bbox span 3.7x4.4 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 1474097,
+   "sha256": "eb595cea2d553874b98a1986535a5120dae753b46bcf3d60203fd237e92d9498",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/mi-margrethe.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "mi-michigamme",
+   "name": "Lake Michigamme",
+   "center": [
+    -88.04756471094318,
+    46.51243823728279
+   ],
+   "zoom": 11,
+   "area_km2": 17.29,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from a Michigan DNR inland lake map (survey year not recorded in the source) (contours digitized by the agency from its survey). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 22.9 m; confidence is strictly distance-to-contour (95% of water cells at >=0.4). No fish-community or water-clarity record is wired for Michigan in v1 - thermal regime, Secchi and fish community use documented fallbacks.",
+   "_notes": "Sources: Michigan DNR Institute for Fisheries Research inland lake contours (Michigan GIS Open Data) with the USGS NHDPlus HR outline; source id 110734859, map IFR 52-1185; no ARA-equivalent record; retrieved/verified 2026-11-08. 111 contour features touching / 39,255 vertices inside, depths 0-21.3 m (contour depths (m): [0.0, 1.52, 3.05, 4.57, 6.1, 7.62, 9.14, 10.67, 12.19, 13.72, 15.24, 16.76, 18.29, 19.81, 21.34]; spacings (m): [1.52, 1.53] (mixed intervals, as digitized in the MIDNR dataset)). Survey year not recorded by the source (honest null). DEM max 22.9 m; deep-hole cap 22.9 m (depth capped at deepest survey contour (21.3 m) + one 1.53 m contour interval (gap between this lake's two deepest contour levels) to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (MIDNR surveyed max-depth point 21.3 m).); 679 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 95% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32616. Thermal: no ARA-equivalent - auto-built from stage-1 summary; Secchi 4 m fallback default. Species: none beyond baseline evidenced (no community source wired). BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 9.5 MB. Zoom 11 from area-band rule (17.29 km2; bbox span 10.9x6.8 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 3638431,
+   "sha256": "f671e53b3884286117d4fbc16b61a6ab6a72bc9a9811a9369fc2369ac4632711",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/mi-michigamme.zip",
    "min_app_build": 11
   },
   {
@@ -1226,6 +1358,28 @@
    "min_app_build": 11
   },
   {
+   "id": "mi-mullett",
+   "name": "Mullett Lake",
+   "center": [
+    -84.522948316535,
+    45.50609163828952
+   ],
+   "zoom": 10.5,
+   "area_km2": 67.63,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from a Michigan DNR inland lake map (survey year not recorded in the source) (contours digitized by the agency from its survey). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 39.6 m; confidence is strictly distance-to-contour (60.9% of water cells at >=0.4). No fish-community or water-clarity record is wired for Michigan in v1 - thermal regime, Secchi and fish community use documented fallbacks.",
+   "_notes": "Sources: Michigan DNR Institute for Fisheries Research inland lake contours (Michigan GIS Open Data) with the USGS NHDPlus HR outline; source id 155411040, map IFR 16-192; no ARA-equivalent record; retrieved/verified 2026-11-08. 34 contour features touching / 40,139 vertices inside, depths 0.6-36.6 m (contour depths (m): [0.61, 0.91, 1.22, 1.52, 2.44, 3.05, 4.57, 5.18, 6.1, 9.14, 12.19, 15.24, 18.29, 21.34, 24.38, 27.43, 30.48, 33.53, 36.58]; spacings (m): [0.3, 0.31, 0.61, 0.92, 1.52, 3.04, 3.05] (mixed intervals, as digitized in the MIDNR dataset)). Survey year not recorded by the source (honest null). DEM max 39.6 m; deep-hole cap 39.6 m (depth capped at deepest survey contour (36.6 m) + one 3.05 m contour interval (gap between this lake's two deepest contour levels) to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (MIDNR surveyed max-depth point 36.6 m).); 340 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 60.9% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32616. Thermal: no ARA-equivalent - auto-built from stage-1 summary; Secchi 4 m fallback default. Species: none beyond baseline evidenced (no community source wired). BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 18.6 MB. Zoom 10.5 from area-band rule (67.63 km2; bbox span 10.5x15.7 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 6400084,
+   "sha256": "47b7b9b5dff53391c215a0f8b839e6e60cb54c36ae1e090813a8b0f658b1c04b",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/mi-mullett.zip",
+   "min_app_build": 11
+  },
+  {
    "id": "newboro",
    "name": "Newboro Lake",
    "center": [
@@ -1555,6 +1709,28 @@
    "min_app_build": 11
   },
   {
+   "id": "nh-squam",
+   "name": "Squam Lake",
+   "center": [
+    -71.52071416557462,
+    43.74727169155322
+   ],
+   "zoom": 11,
+   "area_km2": 28.18,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from the NH DES GPS depth survey of 2021 (contours digitized by the agency from its survey). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 30.5 m; confidence is strictly distance-to-contour (99.6% of water cells at >=0.4). No fish-community or water-clarity record is wired for New Hampshire in v1 - thermal regime, Secchi and fish community use documented fallbacks.",
+   "_notes": "Sources: NH GRANIT lake bathymetry (NH Department of Environmental Services GPS depth surveys); source id SQUAM LAKE, map GRANIT NHLAK700010501-04-01; no ARA-equivalent record; retrieved/verified 2026-11-08. 99 contour features touching / 1,504,869 vertices inside, depths 0-29 m (contour depths (m): [0.0, 1.52, 3.05, 4.57, 6.1, 7.62, 9.14, 10.67, 12.19, 13.72, 15.24, 16.76, 18.29, 19.81, 21.34, 22.86, 24.38, 25.91, 27.43, 28.96]; spacings (m): [1.52, 1.53] (mixed intervals, as digitized in the NHGRANIT dataset)). Survey year 2021 as recorded by the source. DEM max 29.9 m; deep-hole cap 30.5 m (depth capped at deepest survey contour (29.0 m) + one 1.53 m contour interval (gap between this lake's two deepest contour levels) to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (NHGRANIT surveyed max-depth point 30.5 m).); 0 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 99.6% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32619. Thermal: no ARA-equivalent - auto-built from stage-1 summary; Secchi 4 m fallback default. Species: none beyond baseline evidenced (no community source wired). BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 13.5 MB. Zoom 11 from area-band rule (28.18 km2; bbox span 9.4x9.8 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 6107323,
+   "sha256": "df8d1d841d6ea95220d042be697034506d8b3f49f053cd293ec6f79b9e9cab76",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/nh-squam.zip",
+   "min_app_build": 11
+  },
+  {
    "id": "stony",
    "name": "Stony Lake",
    "center": [
@@ -1837,6 +2013,28 @@
    "size_bytes": 20550159,
    "sha256": "e2648353427bbc9a727ac91c6b186187f11251b089d67088ad4e7896d7c9030d",
    "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/wabigoon.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "mi-walloon",
+   "name": "Walloon Lake",
+   "center": [
+    -85.02074753074815,
+    45.3010698471666
+   ],
+   "zoom": 11,
+   "area_km2": 18.53,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Contour-derived bathymetry from a Michigan DNR inland lake map (survey year not recorded in the source) (contours digitized by the agency from its survey). No depth soundings exist for this lake - depths are interpolated between the survey contours and capped at 32.3 m; confidence is strictly distance-to-contour (88.7% of water cells at >=0.4). No fish-community or water-clarity record is wired for Michigan in v1 - thermal regime, Secchi and fish community use documented fallbacks.",
+   "_notes": "Sources: Michigan DNR Institute for Fisheries Research inland lake contours (Michigan GIS Open Data) with the USGS NHDPlus HR outline; source id 155417299, map IFR 15-25; no ARA-equivalent record; retrieved/verified 2026-11-08. 49 contour features touching / 22,668 vertices inside, depths 1.5-30.5 m (contour depths (m): [1.52, 3.05, 6.1, 9.14, 12.19, 15.24, 15.85, 18.29, 21.34, 24.38, 27.43, 28.65, 30.48]; spacings (m): [0.61, 1.22, 1.53, 1.83, 2.44, 3.04, 3.05] (mixed intervals, as digitized in the MIDNR dataset)). Survey year not recorded by the source (honest null). DEM max 32.3 m; deep-hole cap 32.3 m (depth capped at deepest survey contour (30.5 m) + one 1.83 m contour interval (gap between this lake's two deepest contour levels) to remove unconstrained spline-overshoot in deep holes. Basin floors at the cap are conservative - real floors may be deeper (MIDNR surveyed max-depth point 30.5 m).); 26 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 88.7% of water cells (distance to contour vertices, exp decay, 100 m scale). Analysis CRS EPSG:32616. Thermal: no ARA-equivalent - auto-built from stage-1 summary; Secchi 4 m fallback default. Species: none beyond baseline evidenced (no community source wired). BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 11.9 MB. Zoom 11 from area-band rule (18.53 km2; bbox span 9.6x10.8 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 3774504,
+   "sha256": "681dfab864351db8bf65a9e68bc837d224da1dc22cfe9f8b6b760ffb6625fb12",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/mi-walloon.zip",
    "min_app_build": 11
   },
   {
