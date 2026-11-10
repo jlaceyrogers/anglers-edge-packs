@@ -300,6 +300,28 @@
    "min_app_build": 11
   },
   {
+   "id": "beaversundridge",
+   "name": "Beaver Lake",
+   "center": [
+    -79.20919171878457,
+    45.58197186503447
+   ],
+   "zoom": 12.5,
+   "area_km2": 0.95,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Sounding-derived bathymetry from 2003/2018 MNRF GPS spot-depth surveys (2,374 soundings inside the lake, 0.4-24.4 m; year from the LIO bathymetry index). Depths are a thin-plate-spline fit of 25 m sounding nodes, capped at 26.8 m; confidence is distance-to-nearest-sounding (98.4% of water cells at >=0.4); held-out cross-validation MAE 0.22 m on 63 soundings. Cool-regime lake; walleye, smallmouth bass, largemouth bass in the ARA community. Secchi 3.1 m (ARA).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 2,374 soundings in envelope, 2,374 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-09. 38 contour features touching / 0 vertices inside, depths 1-24 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Sounding survey: 2,374 GPS spot depths 0.4-24.4 m, collection dates {'2018-07-20': 2374}; local thin-plate-spline RBF (scipy RBFInterpolator, neighbors=48, smoothing=0.001) on 25 m mean-depth nodes from LIO GPS spot-depth soundings + 0 m shoreline pseudo-nodes; Held-out cross-validation on 63 sounding nodes (10% random hold-out, seed 42) - an honest accuracy estimate because soundings are independent point observations. MAE 0.22 m, RMSE 0.31 m, bias +0.08 m. The contour counts above are LIO's digitized lines for the same water, used for reference only. Survey year(s) 2003/2018 in the LIO bathymetry index (21 record(s)); contour SURVEY_DATE null. DEM max 24.43 m; deep-hole cap 26.8 m (depth capped at deepest observed sounding (24.4 m) + a 10% margin (2.44 m) to remove spline overshoot in unsounded gaps; the margin allows real floors between survey tracks to be somewhat deeper than the deepest sounding. Conservative - real floors may be deeper (ARA record max 24.0 m).); 0 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 98.4% of water cells (distance to nearest sounding, exp decay, 100 m scale). Analysis CRS EPSG:32617. Thermal: Cool regime (ARA); Secchi 3.1 m (ARA); ARA record max 24 m. Species: no beyond-baseline sportfish evidenced; ARA community 10 taxa. BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 0.5 MB. Zoom 12.5 from area-band rule (0.95 km2; bbox span 1.2x1.3 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 251617,
+   "sha256": "c154423ff81183590ee0f4d9a4ebcd5cc55a7f2ff53c345cdcaee8569063c338",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/beaversundridge.zip",
+   "min_app_build": 11
+  },
+  {
    "id": "bella",
    "name": "Bella Lake",
    "center": [
@@ -321,6 +343,31 @@
    "size_bytes": 916283,
    "sha256": "1b9bbe6d08577b80bb2c7409a034246088c42c6b4f4ca7171428ae89ea4147d4",
    "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/bella.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "bells",
+   "name": "Bells Lake",
+   "center": [
+    -80.73874359523477,
+    44.320404156379716
+   ],
+   "zoom": 12.5,
+   "area_km2": 0.87,
+   "species_extra": [
+    "Cisco",
+    "Brook Trout"
+   ],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Sounding-derived bathymetry from a 2007 MNRF GPS spot-depth survey (18,701 soundings inside the lake, 0.5-9.8 m; year from the LIO bathymetry index). Depths are a thin-plate-spline fit of 25 m sounding nodes, capped at 10.8 m; confidence is distance-to-nearest-sounding (99.9% of water cells at >=0.4); held-out cross-validation MAE 0.37 m on 132 soundings. Cold-regime lake; brook trout, cisco in the ARA community. Secchi 7.3 m (ARA).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 19,184 soundings in envelope, 18,701 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-09. 203 contour features touching / 0 vertices inside, depths 1-9 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Sounding survey: 18,701 GPS spot depths 0.5-9.8 m, collection dates {'2007-07-01': 18701}; local thin-plate-spline RBF (scipy RBFInterpolator, neighbors=48, smoothing=0.001) on 25 m mean-depth nodes from LIO GPS spot-depth soundings + 0 m shoreline pseudo-nodes; Held-out cross-validation on 132 sounding nodes (10% random hold-out, seed 42) - an honest accuracy estimate because soundings are independent point observations. MAE 0.37 m, RMSE 0.53 m, bias -0.06 m. The contour counts above are LIO's digitized lines for the same water, used for reference only. Survey year(s) 2007 in the LIO bathymetry index (2 record(s)); contour SURVEY_DATE null. DEM max 9.65 m; deep-hole cap 10.8 m (depth capped at deepest observed sounding (9.8 m) + a 10% margin (0.98 m) to remove spline overshoot in unsounded gaps; the margin allows real floors between survey tracks to be somewhat deeper than the deepest sounding. Conservative - real floors may be deeper (ARA record max 9.0 m).); 0 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 99.9% of water cells (distance to nearest sounding, exp decay, 100 m scale). Analysis CRS EPSG:32617. Thermal: Cold regime (ARA); Secchi 7.3 m (ARA); ARA record max 9 m. Species: Cisco, Brook Trout: ARA; ARA community 18 taxa. BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 0.9 MB. Zoom 12.5 from area-band rule (0.87 km2; bbox span 1.1x3.4 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 474006,
+   "sha256": "a56c9c3b817cccd33114d978598689650ee41786dbc9181f5f4d8de3d7d42ca0",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/bells.zip",
    "min_app_build": 11
   },
   {
@@ -901,6 +948,28 @@
    "min_app_build": 11
   },
   {
+   "id": "chiefsudbury",
+   "name": "Chief Lake",
+   "center": [
+    -81.01647037898012,
+    46.36292492586745
+   ],
+   "zoom": 12.5,
+   "area_km2": 1.08,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Sounding-derived bathymetry from a 2006 MNRF GPS spot-depth survey (7,045 soundings inside the lake, 0.2-35.7 m; year from the LIO bathymetry index). Depths are a thin-plate-spline fit of 25 m sounding nodes, capped at 39.3 m; confidence is distance-to-nearest-sounding (90.7% of water cells at >=0.4); held-out cross-validation MAE 0.52 m on 99 soundings. Cold-regime lake. Secchi 8.1 m (ARA).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 7,227 soundings in envelope, 7,045 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-09. 85 contour features touching / 0 vertices inside, depths 1-35 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Sounding survey: 7,045 GPS spot depths 0.2-35.7 m, collection dates {'2006-07-04': 7045}; local thin-plate-spline RBF (scipy RBFInterpolator, neighbors=48, smoothing=0.001) on 25 m mean-depth nodes from LIO GPS spot-depth soundings + 0 m shoreline pseudo-nodes; Held-out cross-validation on 99 sounding nodes (10% random hold-out, seed 42) - an honest accuracy estimate because soundings are independent point observations. MAE 0.52 m, RMSE 0.83 m, bias -0.11 m. The contour counts above are LIO's digitized lines for the same water, used for reference only. Survey year(s) 2006 in the LIO bathymetry index (3 record(s)); contour SURVEY_DATE null. DEM max 36.7 m; deep-hole cap 39.3 m (depth capped at deepest observed sounding (35.7 m) + a 10% margin (3.57 m) to remove spline overshoot in unsounded gaps; the margin allows real floors between survey tracks to be somewhat deeper than the deepest sounding. Conservative - real floors may be deeper (ARA record max 37.5 m).); 0 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 90.7% of water cells (distance to nearest sounding, exp decay, 100 m scale). Analysis CRS EPSG:32617. Thermal: Cold regime (ARA); Secchi 8.1 m (ARA); ARA record max 37.5 m. Species: no beyond-baseline sportfish evidenced; ARA community 1 taxa. BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 1.0 MB. Zoom 12.5 from area-band rule (1.08 km2; bbox span 3.5x1.6 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 404895,
+   "sha256": "cc2180c153fb7d16ed62634d042097b15e49dc09a8baffcc38a631b855a23c02",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/chiefsudbury.zip",
+   "min_app_build": 11
+  },
+  {
    "id": "mi-clark",
    "name": "Clark Lake",
    "center": [
@@ -1263,6 +1332,31 @@
    "size_bytes": 18236266,
    "sha256": "fc1351503f2a0fecc902e4743583a363607c679f46b9860d62fe47e870bab812",
    "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/dogthunderbay.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "dotty",
+   "name": "Dotty Lake",
+   "center": [
+    -78.99139528867825,
+    45.4620165201048
+   ],
+   "zoom": 12.5,
+   "area_km2": 1.58,
+   "species_extra": [
+    "Cisco",
+    "Brook Trout"
+   ],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Sounding-derived bathymetry from a 2011 MNRF GPS spot-depth survey (5,929 soundings inside the lake, 0.5-30.6 m; year from the LIO bathymetry index). Depths are a thin-plate-spline fit of 25 m sounding nodes, capped at 33.7 m; confidence is distance-to-nearest-sounding (100% of water cells at >=0.4); held-out cross-validation MAE 0.34 m on 168 soundings. Cold-regime lake; lake trout, brook trout, cisco in the ARA community. Secchi 4.5 m (ARA).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 5,929 soundings in envelope, 5,929 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-09. 109 contour features touching / 0 vertices inside, depths 1-30 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Sounding survey: 5,929 GPS spot depths 0.5-30.6 m, collection dates {'2011-01-01': 5929}; local thin-plate-spline RBF (scipy RBFInterpolator, neighbors=48, smoothing=0.001) on 25 m mean-depth nodes from LIO GPS spot-depth soundings + 0 m shoreline pseudo-nodes; Held-out cross-validation on 168 sounding nodes (10% random hold-out, seed 42) - an honest accuracy estimate because soundings are independent point observations. MAE 0.34 m, RMSE 0.50 m, bias -0.08 m. The contour counts above are LIO's digitized lines for the same water, used for reference only. Survey year(s) 2011 in the LIO bathymetry index (2 record(s)); contour SURVEY_DATE null. DEM max 30.24 m; deep-hole cap 33.7 m (depth capped at deepest observed sounding (30.6 m) + a 10% margin (3.06 m) to remove spline overshoot in unsounded gaps; the margin allows real floors between survey tracks to be somewhat deeper than the deepest sounding. Conservative - real floors may be deeper (ARA record max 27.0 m).); 0 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 100% of water cells (distance to nearest sounding, exp decay, 100 m scale). Analysis CRS EPSG:32617. Thermal: Cold regime (ARA); Secchi 4.5 m (ARA); ARA record max 27 m. Species: Cisco, Brook Trout: ARA; ARA community 20 taxa. BsM query returned 21 records. Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 1.4 MB. Zoom 12.5 from area-band rule (1.58 km2; bbox span 2.5x3.1 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 608198,
+   "sha256": "a15d35333486b88a25851fc4e8027618a90c6f43ca508fb270e1fe4d7bf826e4",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/dotty.zip",
    "min_app_build": 11
   },
   {
@@ -2976,6 +3070,28 @@
    "min_app_build": 11
   },
   {
+   "id": "littlecaribou",
+   "name": "Little Caribou Lake",
+   "center": [
+    -89.06710510812849,
+    50.385528780287224
+   ],
+   "zoom": 12,
+   "area_km2": 3.04,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Sounding-derived bathymetry from a 2008 MNRF GPS spot-depth survey (2,574 soundings inside the lake, 0.5-35.6 m; year from the LIO bathymetry index). Depths are a thin-plate-spline fit of 25 m sounding nodes, capped at 39.2 m; confidence is distance-to-nearest-sounding (50% of water cells at >=0.4); held-out cross-validation MAE 0.82 m on 121 soundings. Cold-regime lake; lake trout, walleye, northern pike in the ARA community. Secchi 2.5 m (ARA).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 2,576 soundings in envelope, 2,574 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-09. 114 contour features touching / 0 vertices inside, depths 1-34 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Sounding survey: 2,574 GPS spot depths 0.5-35.6 m, collection dates {'2008-09-08': 2574}; local thin-plate-spline RBF (scipy RBFInterpolator, neighbors=48, smoothing=0.001) on 25 m mean-depth nodes from LIO GPS spot-depth soundings + 0 m shoreline pseudo-nodes; Held-out cross-validation on 121 sounding nodes (10% random hold-out, seed 42) - an honest accuracy estimate because soundings are independent point observations. MAE 0.82 m, RMSE 1.11 m, bias -0.12 m. The contour counts above are LIO's digitized lines for the same water, used for reference only. Survey year(s) 2008 in the LIO bathymetry index (1 record(s)); contour SURVEY_DATE null. DEM max 35.66 m; deep-hole cap 39.2 m (depth capped at deepest observed sounding (35.6 m) + a 10% margin (3.56 m) to remove spline overshoot in unsounded gaps; the margin allows real floors between survey tracks to be somewhat deeper than the deepest sounding. Conservative - real floors may be deeper (ARA record max 31.1 m).); 0 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 50% of water cells (distance to nearest sounding, exp decay, 100 m scale). Analysis CRS EPSG:32616. Thermal: Cold regime (ARA); Secchi 2.5 m (ARA); ARA record max 31.1 m. Species: no beyond-baseline sportfish evidenced; ARA community 5 taxa. BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 3.5 MB. Zoom 12 from area-band rule (3.04 km2; bbox span 2.8x10.6 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 889011,
+   "sha256": "8c4db9d700a2fad7c8f4bd91f851a96e316ab34c5aac37f7f101ece81fb20039",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/littlecaribou.zip",
+   "min_app_build": 11
+  },
+  {
    "id": "livingstone",
    "name": "Livingstone Lake",
    "center": [
@@ -3161,6 +3277,30 @@
    "min_app_build": 11
   },
   {
+   "id": "martinparrysound",
+   "name": "Martin Lake",
+   "center": [
+    -79.851517357898,
+    45.36112702883481
+   ],
+   "zoom": 12.5,
+   "area_km2": 0.99,
+   "species_extra": [
+    "Cisco"
+   ],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Sounding-derived bathymetry from a 2011 MNRF GPS spot-depth survey (2,051 soundings inside the lake, 0.7-15.5 m; year from the LIO bathymetry index). Depths are a thin-plate-spline fit of 25 m sounding nodes, capped at 17.1 m; confidence is distance-to-nearest-sounding (99.3% of water cells at >=0.4); held-out cross-validation MAE 0.62 m on 92 soundings. Cool-regime lake; cisco, smallmouth bass, largemouth bass in the ARA community. Secchi 2.9 m (ARA).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 2,051 soundings in envelope, 2,051 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-09. 68 contour features touching / 0 vertices inside, depths 1-15 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Sounding survey: 2,051 GPS spot depths 0.7-15.5 m, collection dates {'2011-09-01': 2051}; local thin-plate-spline RBF (scipy RBFInterpolator, neighbors=48, smoothing=0.001) on 25 m mean-depth nodes from LIO GPS spot-depth soundings + 0 m shoreline pseudo-nodes; Held-out cross-validation on 92 sounding nodes (10% random hold-out, seed 42) - an honest accuracy estimate because soundings are independent point observations. MAE 0.62 m, RMSE 0.92 m, bias -0.16 m. The contour counts above are LIO's digitized lines for the same water, used for reference only. Survey year(s) 2011 in the LIO bathymetry index (7 record(s)); contour SURVEY_DATE null. DEM max 15.76 m; deep-hole cap 17.1 m (depth capped at deepest observed sounding (15.5 m) + a 10% margin (1.55 m) to remove spline overshoot in unsounded gaps; the margin allows real floors between survey tracks to be somewhat deeper than the deepest sounding. Conservative - real floors may be deeper (ARA record max 15.0 m).); 0 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 99.3% of water cells (distance to nearest sounding, exp decay, 100 m scale). Analysis CRS EPSG:32617. Thermal: Cool regime (ARA); Secchi 2.9 m (ARA); ARA record max 15 m. Species: Cisco: ARA; ARA community 7 taxa. BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 0.9 MB. Zoom 12.5 from area-band rule (0.99 km2; bbox span 2.3x1.4 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 449946,
+   "sha256": "ae7f8a77f40494c2193104337e4e0abdce91930e8fd6754a22baf11d29f0e9bf",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/martinparrysound.zip",
+   "min_app_build": 11
+  },
+  {
    "id": "nh-mascoma",
    "name": "Mascoma Lake",
    "center": [
@@ -3246,6 +3386,28 @@
    "size_bytes": 2675702,
    "sha256": "703600cf036607f83bcfb9dfaf5464931e0c5b0242c83690af029186043cfb21",
    "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/qc-massawippi.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "mckellar",
+   "name": "McKellar Lake",
+   "center": [
+    -79.93210156947532,
+    45.515424954766935
+   ],
+   "zoom": 12.5,
+   "area_km2": 0.89,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Sounding-derived bathymetry from a 2011 MNRF GPS spot-depth survey (1,127 soundings inside the lake, 1-10.2 m; year from the LIO bathymetry index). Depths are a thin-plate-spline fit of 25 m sounding nodes, capped at 11.2 m; confidence is distance-to-nearest-sounding (99.8% of water cells at >=0.4); held-out cross-validation MAE 0.76 m on 82 soundings. Cool-regime lake; walleye, smallmouth bass, largemouth bass in the ARA community. Secchi 3.5 m (ARA).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 1,769 soundings in envelope, 1,127 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-09. 51 contour features touching / 0 vertices inside, depths 1-10 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Sounding survey: 1,127 GPS spot depths 1-10.2 m, collection dates {'2011-06-22': 1127}; local thin-plate-spline RBF (scipy RBFInterpolator, neighbors=48, smoothing=0.001) on 25 m mean-depth nodes from LIO GPS spot-depth soundings + 0 m shoreline pseudo-nodes; Held-out cross-validation on 82 sounding nodes (10% random hold-out, seed 42) - an honest accuracy estimate because soundings are independent point observations. MAE 0.76 m, RMSE 0.98 m, bias -0.34 m. The contour counts above are LIO's digitized lines for the same water, used for reference only. Survey year(s) 2011 in the LIO bathymetry index (1 record(s)); contour SURVEY_DATE null. DEM max 11.2 m; deep-hole cap 11.2 m (depth capped at deepest observed sounding (10.2 m) + a 10% margin (1.02 m) to remove spline overshoot in unsounded gaps; the margin allows real floors between survey tracks to be somewhat deeper than the deepest sounding. Conservative - real floors may be deeper (ARA record max 9.8 m).); 10 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 99.8% of water cells (distance to nearest sounding, exp decay, 100 m scale). Analysis CRS EPSG:32617. Thermal: Cool regime (ARA); Secchi 3.5 m (ARA); ARA record max 9.8 m. Species: no beyond-baseline sportfish evidenced; ARA community 14 taxa. BsM query returned 11 records. Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 0.8 MB. Zoom 12.5 from area-band rule (0.89 km2; bbox span 1.7x1.6 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 444065,
+   "sha256": "1b0c413941ca5a2bf8f4a7ed8c649db3eed804052b815f583c2074efb9eded64",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/mckellar.zip",
    "min_app_build": 11
   },
   {
@@ -3677,6 +3839,30 @@
    "size_bytes": 6420547,
    "sha256": "5217d00f72dbc69e1b4f1e8bb5b47cc4b14a9fedde42571536e6e6f7544fa394",
    "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/qc-nemiscachingue.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "oliver",
+   "name": "Oliver Lake",
+   "center": [
+    -89.58941151510486,
+    48.26578661555266
+   ],
+   "zoom": 12.5,
+   "area_km2": 1.96,
+   "species_extra": [
+    "Cisco"
+   ],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Sounding-derived bathymetry from a 2003 MNRF GPS spot-depth survey (7,807 soundings inside the lake, 1-45 m; year from the LIO bathymetry index). Depths are a thin-plate-spline fit of 25 m sounding nodes, capped at 49.5 m; confidence is distance-to-nearest-sounding (100% of water cells at >=0.4); held-out cross-validation MAE 0.95 m on 207 soundings. Cold-regime lake; lake trout, cisco, walleye in the ARA community. Secchi 5.6 m (ARA).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 7,860 soundings in envelope, 7,807 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-09. 50 contour features touching / 0 vertices inside, depths -0-36 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Sounding survey: 7,807 GPS spot depths 1-45 m, collection dates {'2003-08-29': 7807}; local thin-plate-spline RBF (scipy RBFInterpolator, neighbors=48, smoothing=0.001) on 25 m mean-depth nodes from LIO GPS spot-depth soundings + 0 m shoreline pseudo-nodes; Held-out cross-validation on 207 sounding nodes (10% random hold-out, seed 42) - an honest accuracy estimate because soundings are independent point observations. MAE 0.95 m, RMSE 1.57 m, bias -0.05 m. The contour counts above are LIO's digitized lines for the same water, used for reference only. Survey year(s) 2003 in the LIO bathymetry index (4 record(s)); contour SURVEY_DATE null. DEM max 42.9 m; deep-hole cap 49.5 m (depth capped at deepest observed sounding (45.0 m) + a 10% margin (4.50 m) to remove spline overshoot in unsounded gaps; the margin allows real floors between survey tracks to be somewhat deeper than the deepest sounding. Conservative - real floors may be deeper (ARA record max 38.1 m).); 0 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 100% of water cells (distance to nearest sounding, exp decay, 100 m scale). Analysis CRS EPSG:32616. Thermal: Cold regime (ARA); Secchi 5.6 m (ARA); ARA record max 38.1 m. Species: Cisco: ARA; ARA community 7 taxa. BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 1.2 MB. Zoom 12.5 from area-band rule (1.96 km2; bbox span 2.9x1.8 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 590044,
+   "sha256": "2c90ae559fcba154559d7e2e2337f33bc89aad344a788ebe13ff4c6f3ea8682a",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/oliver.zip",
    "min_app_build": 11
   },
   {
@@ -4145,6 +4331,28 @@
    "min_app_build": 11
   },
   {
+   "id": "pinebracebridge",
+   "name": "Pine Lake",
+   "center": [
+    -79.06852219190554,
+    45.06597089725651
+   ],
+   "zoom": 12.5,
+   "area_km2": 0.84,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Sounding-derived bathymetry from 2006/2015 MNRF GPS spot-depth surveys (1,391 soundings inside the lake, 0.6-22.6 m; year from the LIO bathymetry index). Depths are a thin-plate-spline fit of 25 m sounding nodes, capped at 24.9 m; confidence is distance-to-nearest-sounding (100% of water cells at >=0.4); held-out cross-validation MAE 0.30 m on 59 soundings. Cold-regime lake; lake trout, smallmouth bass, largemouth bass in the ARA community. Secchi 6.3 m (ARA).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 2,259 soundings in envelope, 1,391 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-09. 31 contour features touching / 0 vertices inside, depths 1-22 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Sounding survey: 1,391 GPS spot depths 0.6-22.6 m, collection dates {'2015-01-01': 1391}; local thin-plate-spline RBF (scipy RBFInterpolator, neighbors=48, smoothing=0.001) on 25 m mean-depth nodes from LIO GPS spot-depth soundings + 0 m shoreline pseudo-nodes; Held-out cross-validation on 59 sounding nodes (10% random hold-out, seed 42) - an honest accuracy estimate because soundings are independent point observations. MAE 0.30 m, RMSE 0.45 m, bias -0.12 m. The contour counts above are LIO's digitized lines for the same water, used for reference only. Survey year(s) 2006/2015 in the LIO bathymetry index (27 record(s)); contour SURVEY_DATE null. DEM max 22.91 m; deep-hole cap 24.9 m (depth capped at deepest observed sounding (22.6 m) + a 10% margin (2.26 m) to remove spline overshoot in unsounded gaps; the margin allows real floors between survey tracks to be somewhat deeper than the deepest sounding. Conservative - real floors may be deeper (ARA record max 22.0 m).); 0 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 100% of water cells (distance to nearest sounding, exp decay, 100 m scale). Analysis CRS EPSG:32617. Thermal: Cold regime (ARA); Secchi 6.3 m (ARA); ARA record max 22 m. Species: no beyond-baseline sportfish evidenced; ARA community 16 taxa. BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 0.6 MB. Zoom 12.5 from area-band rule (0.84 km2; bbox span 1.5x1.3 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 297022,
+   "sha256": "3fbb3fa47cebf554c4023f307f51f616c537fd9b9cbcf5dbb9367ae605681953",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/pinebracebridge.zip",
+   "min_app_build": 11
+  },
+  {
    "id": "mn-pokegama",
    "name": "Pokegama Lake",
    "center": [
@@ -4373,6 +4581,28 @@
    "size_bytes": 11098459,
    "sha256": "080f7cd11e7c3e3252e437217216d5017220e05662b0b00e8b276dc01678c942",
    "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/rice.zip",
+   "min_app_build": 11
+  },
+  {
+   "id": "richard",
+   "name": "Richard Lake",
+   "center": [
+    -80.91442224256193,
+    46.438412705957894
+   ],
+   "zoom": 12.5,
+   "area_km2": 0.81,
+   "species_extra": [],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Sounding-derived bathymetry from a 2006 MNRF GPS spot-depth survey (4,200 soundings inside the lake, 0.2-10.4 m; year from the LIO bathymetry index). Depths are a thin-plate-spline fit of 25 m sounding nodes, capped at 11.4 m; confidence is distance-to-nearest-sounding (99.5% of water cells at >=0.4); held-out cross-validation MAE 0.16 m on 69 soundings. Warm-regime lake; walleye, largemouth bass, northern pike in the ARA community. Secchi 4 m (ARA).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 4,633 soundings in envelope, 4,200 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-09. 35 contour features touching / 0 vertices inside, depths 1-10 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Sounding survey: 4,200 GPS spot depths 0.2-10.4 m, collection dates {'2006-06-08': 4200}; local thin-plate-spline RBF (scipy RBFInterpolator, neighbors=48, smoothing=0.001) on 25 m mean-depth nodes from LIO GPS spot-depth soundings + 0 m shoreline pseudo-nodes; Held-out cross-validation on 69 sounding nodes (10% random hold-out, seed 42) - an honest accuracy estimate because soundings are independent point observations. MAE 0.16 m, RMSE 0.30 m, bias -0.04 m. The contour counts above are LIO's digitized lines for the same water, used for reference only. Survey year(s) 2006 in the LIO bathymetry index (3 record(s)); contour SURVEY_DATE null. DEM max 10.32 m; deep-hole cap 11.4 m (depth capped at deepest observed sounding (10.4 m) + a 10% margin (1.04 m) to remove spline overshoot in unsounded gaps; the margin allows real floors between survey tracks to be somewhat deeper than the deepest sounding. Conservative - real floors may be deeper (ARA record max 9.5 m).); 0 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 99.5% of water cells (distance to nearest sounding, exp decay, 100 m scale). Analysis CRS EPSG:32617. Thermal: Warm regime (ARA); Secchi 4 m (ARA); ARA record max 9.5 m. Species: no beyond-baseline sportfish evidenced; ARA community 7 taxa. BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 0.6 MB. Zoom 12.5 from area-band rule (0.81 km2; bbox span 2.1x1.2 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 295852,
+   "sha256": "a44f53eb490692e0e3b1cca0ff370077afaa49adaa019bce31f172d668cd5104",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/richard.zip",
    "min_app_build": 11
   },
   {
