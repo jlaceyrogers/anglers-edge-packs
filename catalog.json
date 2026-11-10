@@ -2209,6 +2209,30 @@
    "min_app_build": 11
   },
   {
+   "id": "lacauxsables",
+   "name": "Lac aux Sables",
+   "center": [
+    -82.32024288350027,
+    46.791511969233014
+   ],
+   "zoom": 11,
+   "area_km2": 12.12,
+   "species_extra": [
+    "Brook Trout"
+   ],
+   "features": {
+    "waterlevel": false
+   },
+   "blurb": "Sounding-derived bathymetry from a 1900 MNRF GPS spot-depth survey (21,821 soundings inside the lake, 0.8-31.6 m; year from the LIO bathymetry index). Depths are a thin-plate-spline fit of 25 m sounding nodes, capped at 34.8 m; confidence is distance-to-nearest-sounding (84.5% of water cells at >=0.4); held-out cross-validation MAE 0.26 m on 487 soundings. Cold-regime lake; lake trout, brook trout in the ARA community. Secchi 4 m is a FALLBACK default (ARA Secchi null).",
+   "_notes": "Sources: Ontario LIO layers 25 (OHN waterbody), 27 (Bathymetry Point - 27,369 soundings in envelope, 21,821 inside polygon), 30 (Bathymetry Line), 31 (Bathymetry Index); ARA water poly segment; retrieved/verified 2026-11-09. 241 contour features touching / 0 vertices inside, depths 1-31 m (contours at imperial intervals (3.05 m/10 ft to 30.5 m, then 6.1 m/20 ft steps to 91.4 m) - vintage imperial-units transect survey). Sounding survey: 21,821 GPS spot depths 0.8-31.6 m, collection dates {'1900-01-01': 21821}; local thin-plate-spline RBF (scipy RBFInterpolator, neighbors=48, smoothing=0.001) on 25 m mean-depth nodes from LIO GPS spot-depth soundings + 0 m shoreline pseudo-nodes; Held-out cross-validation on 487 sounding nodes (10% random hold-out, seed 42) - an honest accuracy estimate because soundings are independent point observations. MAE 0.26 m, RMSE 0.47 m, bias -0.02 m. The contour counts above are LIO's digitized lines for the same water, used for reference only. Survey year(s) 1900 in the LIO bathymetry index (1 record(s)); contour SURVEY_DATE null. DEM max 34.8 m; deep-hole cap 34.8 m (depth capped at deepest observed sounding (31.6 m) + a 10% margin (3.16 m) to remove spline overshoot in unsounded gaps; the margin allows real floors between survey tracks to be somewhat deeper than the deepest sounding. Conservative - real floors may be deeper (ARA record max 32.0 m).); 642 cells at cap. Bundle depth scale 0.5 m (grid.json). Confidence>=0.4 support 84.5% of water cells (distance to nearest sounding, exp decay, 100 m scale). Analysis CRS EPSG:32617. Thermal: Cold regime (ARA); Secchi 4 m is a FALLBACK default; ARA record max 32 m. Species: Brook Trout: ARA; ARA community 14 taxa. BsM query returned 0 records (honest-empty layer). Waterlevel: no on-lake gauge (unavailable_omitted; GeoMet search documented). Pack app/data footprint 6.8 MB. Zoom 11 from area-band rule (12.12 km2; bbox span 5.7x9.1 km) - verify visually against lake extent.",
+   "vintage": true,
+   "version": 1,
+   "size_bytes": 2581791,
+   "sha256": "bf6e003efa55bc322ac3938f43e66c6c0500c59b0494da119f4848adc760588e",
+   "url": "https://github.com/jlaceyrogers/anglers-edge-packs/releases/download/packs-v1/lacauxsables.zip",
+   "min_app_build": 11
+  },
+  {
    "id": "lacdesiles",
    "name": "Lac des Iles",
    "center": [
